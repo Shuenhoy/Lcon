@@ -1,0 +1,17 @@
+$#include "lcon.h"
+$#include "conio.h"
+module lcon
+{
+void gotoXY(int x, int y);
+void ClearConsole@cls(void);
+void ClearConsoleToColors@cls_c(int ForgC, int BackC);
+void SetColorAndBackground@set_colorx(int ForgC, int BackC);
+void SetColor@set_color(int ForgC);
+void HideTheCursor@hide_cursor(void);
+void ShowTheCursor@show_cursor(void);
+void CurrentCursorPosition@pcurpos() ;
+int CursorX@cur_x();
+int CursorY@cur_y();
+int getch();
+int kbhit();
+}
